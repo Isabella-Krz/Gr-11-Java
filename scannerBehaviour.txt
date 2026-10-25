@@ -1,0 +1,21 @@
+Scanner behaviour = flow
+
+.next(), .nextLine(), .nextInt(), .nextDouble()
+
+.next()
+
+    1. Checks to see if the scanner is empty (looks for the token of space or /r with )
+        If the scanner is empty, wait for user input
+
+    2. Returns everything up to the first token and moves the scanner's pointer
+
+.nextLine()
+
+    1. Checks to see if the scanner is empty (looks for the token of /n)
+        If the scanner is empty, wait for user input
+
+    2. Returns everything up to the first token and moves the scanner's pointer
+
+Note: The scanner's pointer can never move back. Once values are returned, they are now unaccessible
+
+If you type uI next();, it will still run but won't be assigned to a variable
